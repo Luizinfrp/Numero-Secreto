@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Open+Sans:wght@300;600&display=swap');
+
+:root {
+     --fonte-pricipal: 'Montserrat', sans-serif;
+     --branco-principal: #FFFF;
+     --azul-principal: rgb(70, 136, 236);
+}
+
+body {
+     font-family: var(--fonte-pricipal);
+     letter-spacing: 5px;
+     background-color: var(--azul-principal);
+     color: var(--branco-principal);
+
+     min-height: 100vh;
+     margin: 0;
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+h1 {
+     font-size: 6em;
+}
+
+h2 {
+     font-size: 7em;
+}
+
+h3 {
+     font-size: 3em;
+     margin-top: 20px;
+}
+
+.mensagem {
+     font-size: 1.5em;
+     margin-top: 40px;
+}
+
+.box {
+     border: 2px solid var(--branco-principal);
+     display: inline-block;
+     font-size: 4.5em;
+     padding: 15px;
+     margin: 20px;
+}
+
+button {
+     border: 1px solid var(--branco-principal);
+     padding: 30px;
+     background-color: transparent;
+     color: var(--branco-principal);
+     margin-top: 30px;
+     font-size: 2em;
+}
+
+@media screen and (max-width: 425px) {
+     h1 {
+          font-size: 2.3em;
+     }
+
+     h2 {
+          font-size: 2em;
+     }
+
+     h3 {
+          font-size: 1.5em;
+     }
+
+     .mensagem {
+          font-size: 1.5em;
+     }
+
+     .box {
+          font-size: 2.5em;
+     }
+
+     button {
+          border: 1px solid var(--branco-principal);
+          padding: 10px;
+
+          background-color: transparent;
+          color: var(--branco-principal);
+          margin-top: 15px;
+     }
+}
